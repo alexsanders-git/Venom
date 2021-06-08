@@ -1,5 +1,5 @@
 # Venom
-Интенсив от Glo Academy "Промостраница к фильму «Веном 2»"
+Интенсив от [Glo Academy](https://glo.academy/) "Промостраница к фильму «Веном 2»"
 ___
 
 #### :link: Live Demo: 
