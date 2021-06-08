@@ -10,6 +10,6 @@ ___
 
 * HTML
 * CSS
-* * [Normalize.css](https://necolas.github.io/normalize.css/)
+* [Normalize.css](https://necolas.github.io/normalize.css/)
 * methodology [BEM](https://en.bem.info/)
 * JavaScript
