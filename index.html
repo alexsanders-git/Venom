@@ -4,13 +4,13 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Venom-2 - сайт о фильме</title>
+        <title>Главная - Venom-2</title>
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="css/normalize.css" />
         <link rel="stylesheet" href="css/style.css" />
     </head>
-    <body>
+    <body class="blood">
         <header class="header">
             <div class="container">
                 <a href="/" class="header__logo">
@@ -19,13 +19,13 @@
                 <nav class="menu">
                     <ul class="menu__list">
                         <li class="menu__item">
-                            <a href="#!" class="menu__link">о фильме</a>
+                            <a href="about.html" class="menu__link">о фильме</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#!" class="menu__link">трейлер</a>
+                            <a href="trailer.html" class="menu__link">трейлер</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#!" class="menu__link">актеры</a>
+                            <a href="actors.html" class="menu__link">актеры</a>
                         </li>
                         <li class="menu__item">
                             <a href="#!" class="menu__link">премьера</a>
@@ -47,9 +47,21 @@
                     </p>
                 </div>
                 <!-- /.film__content -->
+                <div class="button-group">
+                    <button class="button button-primary">
+                        <img width="15" src="img/svg/play.svg" alt="Icon: play" class="button__icon" />
+                        <span class="button__text">смотреть трейлер</span>
+                    </button>
+                    <a href="trailer.html" class="button button-link">
+                        <img width="15" src="img/svg/ticket.svg" alt="Icon: ticket" class="button__icon" />
+                        <span class="button__text">билеты на премьеру</span>
+                    </a>
+                </div>
+                <!-- /.button-group -->
             </div>
             <!-- /.container -->
         </div>
         <!-- /.film -->
+        <img src="img/venom.png" alt="Photo: Venom" class="venom" />
     </body>
 </html>
