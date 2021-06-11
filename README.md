@@ -11,7 +11,8 @@ ___
 #### :rocket: Technologies Used
 
 * HTML
-* CSS
+* SCSS
 * [Normalize.css](https://necolas.github.io/normalize.css/)
+* [FancyBox](https://fancyapps.com/fancybox/3/)
 * methodology [BEM](https://en.bem.info/)
 * JavaScript
