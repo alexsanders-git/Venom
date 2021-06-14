@@ -1,0 +1,45 @@
+// Media
+@mixin media($size) {
+    @if $size==xl {
+        @media only screen and (max-width: 1024px) {
+            @content;
+        }
+    }
+
+    @else if $size==lg {
+        @media only screen and (max-width: 992px) {
+            @content;
+        }
+    }
+
+    @else if $size==md {
+        @media only screen and (max-width: 768px) {
+            @content;
+        }
+    }
+
+    @else if $size==sm {
+        @media only screen and (max-width: 576px) {
+            @content;
+        }
+    }
+}
+
+// No button style
+@mixin no-btn ($display:"inline-block") {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: transparent;
+    border-radius: 0;
+    cursor: pointer;
+    appearance: none;
+    display: $display;
+}
+
+// font face
+@mixin font-face($name, $weight: 400, $style: normal) {
+    font-family: $name;
+    font-weight: $weight;
+    font-style: $style;
+}

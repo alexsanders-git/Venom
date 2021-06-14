@@ -5,8 +5,20 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Главная - Venom-2</title>
+
+        <link rel="apple-touch-icon" sizes="180x180" href="img\favicon/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="img\favicon/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="img\favicon/favicon-16x16.png" />
+        <link rel="manifest" href="img\favicon/site.webmanifest" />
+        <link rel="mask-icon" href="img\favicon/safari-pinned-tab.svg" color="#333333" />
+        <link rel="shortcut icon" href="img\favicon/favicon.ico" />
+        <meta name="msapplication-TileColor" content="#333333" />
+        <meta name="msapplication-config" content="img\favicon/browserconfig.xml" />
+        <meta name="theme-color" content="#333333" />
+
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
         <link rel="stylesheet" href="css/normalize.css" />
         <link rel="stylesheet" href="css/style.css" />
     </head>
@@ -17,18 +29,26 @@
                     <img src="img/svg/logo.svg" alt="Logo: Venom" />
                 </a>
                 <nav class="menu">
+                    <button class="menu__button">
+                        <span class="menu__button_text">МЕНЮ</span>
+                        <img src="./img/svg/menu-button.svg" alt="Icon: menu button" class="menu__button_icon" />
+                    </button>
+                    <button class="menu__close">
+                        <span class="menu__close_text">закрыть</span>
+                        <img src="./img/svg/arrow.svg" alt="Icon: menu close" class="menu__close_icon" />
+                    </button>
                     <ul class="menu__list">
                         <li class="menu__item">
                             <a href="about.html" class="menu__link">о фильме</a>
                         </li>
                         <li class="menu__item">
-                            <a href="trailer.html" class="menu__link">трейлер</a>
+                            <a data-fancybox href="https://www.youtube.com/watch?v=KGiy32SVOBw" class="menu__link">трейлер</a>
                         </li>
                         <li class="menu__item">
                             <a href="actors.html" class="menu__link">актеры</a>
                         </li>
                         <li class="menu__item">
-                            <a href="#!" class="menu__link">премьера</a>
+                            <a href="https://www.imdb.com/title/tt7097896/?ref_=nv_sr_srsg_0" class="menu__link" target="_blank">премьера</a>
                         </li>
                     </ul>
                 </nav>
@@ -48,13 +68,17 @@
                 </div>
                 <!-- /.film__content -->
                 <div class="button-group">
-                    <button class="button button-primary">
-                        <img width="15" src="img/svg/play.svg" alt="Icon: play" class="button__icon" />
-                        <span class="button__text">смотреть трейлер</span>
-                    </button>
+                    <a data-fancybox href="https://www.youtube.com/watch?v=KGiy32SVOBw" class="button button-primary">
+                        <svg class="button__icon">
+                            <use href="img/svg/sprite.svg#play"></use>
+                        </svg>
+                        <span class="button__text">Смотреть трейлер</span>
+                    </a>
                     <a href="trailer.html" class="button button-link">
-                        <img width="15" src="img/svg/ticket.svg" alt="Icon: ticket" class="button__icon" />
-                        <span class="button__text">билеты на премьеру</span>
+                        <svg class="button__icon">
+                            <use href="img/svg/sprite.svg#ticket"></use>
+                        </svg>
+                        <span class="button__text">Билеты на премьеру</span>
                     </a>
                 </div>
                 <!-- /.button-group -->
@@ -63,5 +87,8 @@
         </div>
         <!-- /.film -->
         <img src="img/venom.png" alt="Photo: Venom" class="venom" />
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+        <script src="js/script.js"></script>
     </body>
 </html>
