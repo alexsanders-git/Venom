@@ -16,3 +16,4 @@ ___
 * [FancyBox](https://fancyapps.com/fancybox/3/)
 * methodology [BEM](https://en.bem.info/)
 * JavaScript
+* [Swiper](https://swiperjs.com/)
